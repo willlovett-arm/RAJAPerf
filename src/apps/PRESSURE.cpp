@@ -64,10 +64,10 @@ void PRESSURE::runKernel(VariantID vid)
 
   PRESSURE_DATA_SETUP_CPU;
 
-  auto pressure1_lam = [=](int i) {
+  auto pressure1_lam = [=](Index_type i) {
                          PRESSURE_BODY1;
                        };
-  auto pressure2_lam = [=](int i) {
+  auto pressure2_lam = [=](Index_type i) {
                          PRESSURE_BODY2;
                        };
   
